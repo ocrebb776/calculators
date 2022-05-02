@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bigeval"></script>
+    <script>
+        var Obj = new BigEval()
+        function final(text) {
+            console.log(Obj.exec(text))
+            document.getElementById("output").innerHTML = Obj.exec(text)
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="title">
+        <span class="heading">Calculators</span>
+        <a class="no" onclick="location.reload()">Home</a>
+        <a class="no" href="about.html">About</a>
+        <a class="no" href="more.html">More</a>
+    </div>
+    <div class="regular" id="r">
+        <div class="output" id="output">
+            0
+        </div>
+        <div class="buttonf">
+            <button onclick="press(7)">7</button>
+            <button onclick="press(8)">8</button>
+            <button onclick="press(9)">9</button>
+            <button onclick="press(4)">4</button>
+            <button onclick="press(5)">5</button>
+            <button onclick="press(6)">6</button>
+            <button onclick="press(1)">1</button>
+            <button onclick="press(2)">2</button>
+            <button onclick="press(3)">3</button>
+            <button onclick="press(3)">0</button>
+            <button onclick="press('.')">.</button>
+            <button onclick="press('+')">+</button>
+            <button onclick="press('-')">-</button>
+            <button onclick="final(integer)">=</button>
+        </div>
+    </div>
+    <div class="selector">
+        <h1>Select calculator </h1>
+        <div class="table">
+            <div class="box">
+                <div class="text" onclick="show('r')">
+                    <img src="images/regular.jpg">
+                    <h3>regular calculator</h3>
+                    <h5>just like any other</h5>
+                </div>
+            </div>
+            <div class="box">
+                <div class="text" onclick="currency()">
+                    <img src="images/CURRENCY.png">
+                    <h3>currency Calculators</h3>
+                    <h5>convert currency</h5>
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="text">
+                    a
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
