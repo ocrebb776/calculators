@@ -1,6 +1,10 @@
 @media screen and (min-width: 900px){
     
-
+    #c .table{
+        display: grid;
+        grid-template-rows: 1fr ;
+        grid-template-columns: 1fr 1fr;
+    }
 .title{
     background-color: rgb(208, 208, 208);
     padding: 40px;
@@ -70,6 +74,11 @@ html,body{
   }
 }
 @media screen and (max-width: 900px){
+    #c .table{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
 .title{
     background-color: rgb(208, 208, 208);
     padding: 40px;
@@ -122,35 +131,101 @@ html,body{
     border-top: 2px solid rgb(0, 0, 0);
     margin-bottom: 3px;
   }
+  #c .table select{
+    font-size: 20px;
+}
 }
 .regular{
-    width: 100%;
+    width: 847px;
     background-color: rgb(255, 255, 255);
     height: 100%;
     position: absolute;
-    display:nonea;
     z-index: 1;
     text-align: center;
+    width: 100%;
+}
+#c{
+    display:nonea;
+}
+#r{
+    display:none;
 }
 .output{
     margin:auto;
     margin-top: 50px;
     background-color: rgb(233, 233, 233);
     padding: 10px;
-    max-width: 80vw;
+    max-width: 89vw;
     text-align: right;
     font-size: 50px;
+    height: 60px;
+    overflow: auto;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .buttonf{
-    width: 80vw;
+    width: 100%;
     margin: auto;
     text-align: center;
-    border: 1px solid red;
-    font-size: 0px;
+    font-size: 0px
 }
-.buttonf button{
-    width: calc(80vw / 3);
-    height: calc(80vw / 3);
+.buttonr button{
+    background-color: rgb(198, 198, 198);
+    width: calc(90vw / 4);
+    height: calc(50vh / 3);
     font-size: 30px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.x button{
+    height: 50px;
+    width: 70px;
+    display: block;
+    position: fixed;
+}
+#c .table{
+    background-color: rgb(255, 255, 255);
+/*grid display is in conitional*/
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+
+}
+#c .table .i form{
+    border: 3px solid rgb(0, 0, 0);
+    display: grid;
+grid-template-rows: 90px 5fr;
+height: 100%;
+}
+#c .table select{
+    width: 100%;
+text-align: center;
+    height: 100%;
+    /* font size is contintional*/
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid black;
+
+}
+#c .table input[type=number],#c .table .o .out{
+    text-align: center;
+    font-size: 70px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius:5px ;
+}#c .table input[type=submit],#c .table .o .x{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    height: 70px;
+    
+}
+#c .table .o form{
+    border: 3px solid rgb(0, 0, 0);
+    display: grid;
+grid-template-rows: 90px 5fr;
+height: 100%;
 }
