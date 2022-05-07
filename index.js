@@ -41,8 +41,11 @@ function back() {
 }
 function checkcu() {
   alert('x')
-  return true
 }
 let x = '/a/g'
 let integer = ''
 let operators = ['*', '/', '+', '-']
+const box = document.getElementById('iframex')
+
+// 👇️ Apple, Banana, Kiwi
+console.log(box.textContent)
