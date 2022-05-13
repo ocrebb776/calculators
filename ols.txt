@@ -1,0 +1,29 @@
+currency table
+        <div class="table">
+            <div class="i">
+                <form name="input" onsubmit="check()">
+                    <select id="curr" name="curr" required>
+                        <option value="empty">Pick one</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <input type="number" name="amont" min="0" required>
+                    <input type="submit" value="calculate">
+                </form>
+            </div>
+            <div class="o">
+                <form name="output">
+                    <select id="curr" name="curr">
+                        <option value="empty">Pick one</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <div class="out" id="curro">0</div>
+                    <div class="x">
+
+                    </div>
+                </form>
+            </div>
+        </div>

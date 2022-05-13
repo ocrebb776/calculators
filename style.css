@@ -144,8 +144,9 @@ html,body{
     text-align: center;
     width: 100%;
 }
-#c{
-    display:nonea;
+#i{
+    display:none;
+    text-align: center;
 }
 #r{
     display:none;
@@ -183,50 +184,62 @@ html,body{
     display: block;
     position: fixed;
 }
-#c .table{
-    background-color: rgb(255, 255, 255);
-/*grid display is in conitional*/
-    height: 70%;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-
-}
-#c .table .i form{
-    border: 3px solid rgb(0, 0, 0);
+#i form{
     display: grid;
-grid-template-rows: 90px 5fr;
-height: 100%;
-}
-#c .table select{
-    width: 100%;
-text-align: center;
-    height: 100%;
-    /* font size is contintional*/
-    font-weight: bold;
-    border: none;
-    border-bottom: 3px solid black;
-
-}
-#c .table input[type=number],#c .table .o .out{
-    text-align: center;
-    font-size: 70px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 90%;
     margin: auto;
-    border: 1px solid black;
-    border-radius:5px ;
-}#c .table input[type=submit],#c .table .o .x{
-    text-align: center;
+    height: 90%;
+}
+@media screen and (min-width: 900px){
+#i form button{
+
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    padding: 0px;
+    border-radius: 0px 0px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#i form input[type=number]{
+    font-size: 70px;
+}
+}
+@media screen and (max-width: 900px){
+    #i form button{
+        background-color: white;
+        border: none;
+        font-size: 20px;
+        padding: 0px;
+        border-radius: 0px 0px 0px 0px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }}
+#i button{
+    padding: 20px;
     font-size: 40px;
-    width: 100%;
+    border-radius: 20px 0px 20px 0px;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    text-align: center;
     margin: auto;
-    height: 70px;
-    
 }
-#c .table .o form{
-    border: 3px solid rgb(0, 0, 0);
-    display: grid;
-grid-template-rows: 90px 5fr;
-height: 100%;
+#rest{
+    display: none;
+    text-align: center;
 }
-#iframex{display: none;}
+#i #rest table{
+    width: 100%;
+border-collapse: collapse;
+}
+#i #rest table td{
+    font-size: 30px;
+    border: 5px solid rgb(255, 255, 255);
+background-color: rgb(219, 219, 219);
+border-radius: 20px;
+}
+#i #rest table th{
+    font-size: 40px;
+}
